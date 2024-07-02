@@ -3,6 +3,7 @@ object ArithmeticMean{
         val sum = num1 + num2
 
         val avg = sum / 2.0
+         BigDecimal(avg).setScale(2, BigDecimal.RoundingMode.HALF_UP).toDouble
         return avg
     }
 
